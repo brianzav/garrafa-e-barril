@@ -2,14 +2,12 @@ import React from "react";
 import { View, Text, Image, TextInput, ScrollView, FlatList, TouchableOpacity } from "react-native";
 import Carousel from 'react-native-snap-carousel';
 
-
 const carouselData = [
   { id: '1', image: require('../../../assets/carrousel1.png') },
   { id: '2', image: require('../../../assets/carrousel2.png') },
-  { id: '3', image: require('../../../assets/carrousel3.png') },
-  
+  { id: '3', image: require('../../../assets/carrousel3.png') },  
 ];
-//editar preco e nome vinhos
+
 const winesData = [
   { id: '1', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
   { id: '2', name: 'La Flor de Pulenta Sauvignon Blanc', price: '$25', image: require('../../../assets/argentino2.png') },
@@ -20,7 +18,7 @@ const winesData = [
 
 const WineItem = ({ item, navigation }) => {
   const navigateToProduct = () => {
-   
+    navigation.navigate('DetalheProduto', { product: item });
   };
 
   return (
@@ -53,17 +51,21 @@ const Home = ({ navigation }) => {
     );
   };
 
+  const renderMostWantedItem = ({ item }) => {
+    return (
+      <WineItem item={item} navigation={navigation} />
+    );
+  };
+
   return (
     <ScrollView>
       <View style={{ flex: 1, backgroundColor: '#250000' }}>
-        {/* Resto del contenido */}
         <View style={{ paddingHorizontal: 20, paddingTop: 20 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <Image source={require('../../../assets/icon.png')} style={{ width: 100, height: 100, marginRight: 10 }} />
             <Text style={{ fontSize: 18, color: 'white', marginLeft: 'auto' }}>Bem-Vindo</Text>
           </View>
 
-          {/* Barra de búsqueda */}
           <View style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 10 }}>
             <TextInput
               style={{ flex: 1, borderWidth: 1, borderColor: 'gray', borderRadius: 5, paddingHorizontal: 10, backgroundColor: 'white', color: 'black' }}
@@ -72,20 +74,18 @@ const Home = ({ navigation }) => {
             <Image source={require('../../../assets/splash.png')} style={{ width: 20, height: 20, marginLeft: 10 }} />
           </View>
 
-          {/* Carousel de fotos */}
           <View style={{ marginVertical: 20 }}>
             <Carousel
               data={carouselData}
               renderItem={renderCarouselItem}
-              sliderWidth={400} // Ancho del carrusel
-              itemWidth={300} // Ancho de cada elemento del carrusel
-              loop={true} // Habilitar el bucle del carrusel
-              autoplay={true} // Habilitar reproducción automática
-              autoplayInterval={3000} // Intervalo de reproducción automática (en milisegundos)
+              sliderWidth={400}
+              itemWidth={300}
+              loop={true}
+              autoplay={true}
+              autoplayInterval={3000}
             />
           </View>
 
-          {/* Más buscados */}
           <View style={{ paddingHorizontal: 20 }}>
             <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Mais procurados</Text>
             <FlatList
@@ -93,12 +93,11 @@ const Home = ({ navigation }) => {
               horizontal
               showsHorizontalScrollIndicator={false}
               keyExtractor={(item) => item.id}
-              renderItem={({ item }) => <WineItem item={item} navigation={navigation} />}
+              renderItem={renderMostWantedItem}
               contentContainerStyle={{ paddingBottom: 20 }}
             />
           </View>
 
-          {/* Promociones */}
           <View style={{ paddingHorizontal: 20 }}>
             <Text style={{ fontSize: 16, fontWeight: 'bold', marginTop: 20, color: 'white' }}>Promoções</Text>
             <Image source={require('../../../assets/promocao.png')} style={{ width: '100%', height: 200, marginTop: 10 }} />
