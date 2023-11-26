@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { CartContextProvider } from './src/CartContextProvider'; // Ajusta la ruta según sea necesario
+import { CartContextProvider } from './src/CartContextProvider'; 
 import TelaPadrao from './src/componentes/TelaPadrao';
 import Rotas from './src/Rotas';
 

@@ -26,8 +26,7 @@ const ProductDetail = ({ route }) => {
   };
 
   const handleAddToCart = () => {
-    // Agrega el producto al carrito utilizando addToCart del contexto
-    addToCart({ ...product, quantity }); // Agrega el producto con su cantidad al carrito
+    addToCart({ ...product, quantity }); 
     console.log('Agregar al carrito');
   };
 
@@ -82,7 +81,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   productImageWrapper: {
-    backgroundColor: 'lightgray', // Color del fondo del contenedor
+    backgroundColor: 'lightgray', 
     borderRadius: 10,
     padding: 10,
   },
