@@ -3,21 +3,20 @@ import { View, Text, Image, ScrollView, FlatList, TouchableOpacity } from "react
 
 const winesData = {
   argentinos: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah  ', price: 'R$20', image: require('../../../assets/argentino1.png') },
-    
+    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '2', name: 'Guaspari Syrah  ', price: 20, image: require('../../../assets/argentino1.png') },
   ],
   brasileiros: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
   ],
   uruguaios: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
   ],
   chilenos: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 'R$20', image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
   ],
 };
 

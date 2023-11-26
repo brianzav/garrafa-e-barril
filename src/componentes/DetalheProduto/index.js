@@ -27,7 +27,6 @@ const ProductDetail = ({ route }) => {
 
   const handleAddToCart = () => {
     addToCart({ ...product, quantity }); 
-    console.log('Agregar al carrito');
   };
 
   return (
@@ -44,7 +43,7 @@ const ProductDetail = ({ route }) => {
       <View style={styles.detailsContainer}>
         <View style={styles.detailsColumn}>
           <Text style={styles.productName}>{product.name}</Text>
-          <Text style={styles.productPrice}>{product.price}</Text>
+          <Text style={styles.productPrice}>R${product.price}</Text>
         </View>
         <View style={styles.quantityContainer}>
           <TouchableOpacity onPress={decreaseQuantity} style={styles.quantityButton}>
@@ -57,14 +56,14 @@ const ProductDetail = ({ route }) => {
         </View>
       </View>
       <TouchableOpacity style={styles.addToCartButton} onPress={handleAddToCart}>
-        <Text style={styles.actionButtonText}>Agregar al carrito</Text>
+        <Text style={styles.actionButtonText}>Adicionar ao carrinho</Text>
       </TouchableOpacity>
       <View style={styles.separator} />
       <TouchableOpacity onPress={handleDescriptionPress}>
-        <Text style={styles.clickableText}>Descripción</Text>
+        <Text style={styles.clickableText}>Descricão</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleAdditionalInfoPress}>
-        <Text style={styles.clickableText}>Información adicional</Text>
+        <Text style={styles.clickableText}>Informação adicional</Text>
       </TouchableOpacity>
     </View>
   );
@@ -103,8 +102,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   productPrice: {
-    fontSize: 18,
-    marginTop: 10,
+    fontSize: 28,
+    marginTop: 0,
+    color: 'red',
+    fontWeight:'bold',
   },
   quantityContainer: {
     flexDirection: 'row',
