@@ -4,19 +4,33 @@ import { View, Text, Image, ScrollView, FlatList, TouchableOpacity } from "react
 const winesData = {
   argentinos: [
     { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah  ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '2', name: 'Guaspari Syrah  ', price: 20, image: require('../../../assets/argentino2.png') },
+    { id: '3', name: 'Malbec Finca La Linda ', price: 23, image: require('../../../assets/argentino3.png') },
+    { id: '4', name: 'Torrontés Colomé ', price: 27, image: require('../../../assets/argentino4.png') },
+    { id: '5', name: 'Bonarda Trapiche ', price: 73, image: require('../../../assets/argentino5.png') }
   ],
   brasileiros: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Pizzato Legno Chardonnay ', price: 13, image: require('../../../assets/brasileiro1') },
+    { id: '2', name: 'Casa Valduga  ', price: 72, image: require('../../../assets/brasileiro2') },
+    { id: '3', name: 'Salton Talento', price: 40, image: require('../../../assets/brasileiro3') },
+    { id: '4', name: 'Miolo Merlot Reserva ', price: 30, image: require('../../../assets/brasileiro4') },
+    { id: '5', name: 'Lidio Carraro  ', price: 13, image: require('../../../assets/brasileiro5') }
+
   ],
   uruguaios: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Tannat Reserva ', price: 45, image: require('../../../assets/uruguaio1.png') },
+    { id: '2', name: 'Albariño Pizzorno ', price: 65, image: require('../../../assets/uruguaio2.png') },
+    { id: '3', name: 'Preludio Barrel ', price: 32, image: require('../../../assets/uruguaio3.png') },
+    { id: '4', name: 'Merlot Juanicó ', price: 41, image: require('../../../assets/uruguaio4.png') },
+    { id: '5', name: 'Cabernet Franc ', price: 53, image: require('../../../assets/uruguaio5.png') }
   ],
   chilenos: [
-    { id: '1', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
-    { id: '2', name: 'Guaspari Syrah Vista ', price: 20, image: require('../../../assets/argentino1.png') },
+    { id: '1', name: 'Casillero del Diablo  ', price: 120, image: require('../../../assets/chileno1.png') },
+    { id: '2', name: 'Montes Alpha ', price: 400, image: require('../../../assets/chileno2.png') },
+    { id: '3', name: 'Santa Rita ', price: 129, image: require('../../../assets/chileno3.png') },
+    { id: '4', name: 'Errázuriz Max ', price: 91, image: require('../../../assets/chileno4.png') },
+    { id: '5', name: 'Cono Sur ', price: 34, image: require('../../../assets/chileno5.png') },
+
   ],
 };
 
