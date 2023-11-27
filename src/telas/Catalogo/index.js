@@ -54,7 +54,7 @@ const CatalogScreen = ({ navigation }) => {
 
       
         <View style={{ marginVertical: 20 }}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinos Argentinos</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinhos Argentinos</Text>
           <FlatList
             data={winesData.argentinos}
             horizontal
@@ -80,7 +80,7 @@ const CatalogScreen = ({ navigation }) => {
         </View>
 
         <View style={{ marginVertical: 20 }}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinos uruguaios</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinhos uruguaios</Text>
           <FlatList
             data={winesData.uruguaios}
             horizontal
@@ -92,7 +92,7 @@ const CatalogScreen = ({ navigation }) => {
         </View>
 
         <View style={{ marginVertical: 20 }}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinos chilenos</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginBottom: 10 }}>Vinhos chilenos</Text>
           <FlatList
             data={winesData.chilenos}
             horizontal

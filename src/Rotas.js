@@ -5,7 +5,7 @@ import Home from '../../garrafa-e-barril/src/telas/Home';
 import Carrinho from '../../garrafa-e-barril/src/telas/Carrinho';
 import MinhaConta from '../../garrafa-e-barril/src/telas/MinhaConta';
 import Catalogo from '../../garrafa-e-barril/src/telas/Catalogo';
-import DetalheProduto from '../../garrafa-e-barril/src/componentes/DetalheProduto';
+import DetalheProduto from './Componentes/DetalheProduto';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { Image } from 'react-native';

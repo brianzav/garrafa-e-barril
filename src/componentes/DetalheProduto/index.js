@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
-import { CartContext } from '../../../src/CartContextProvider'; // Importa el CartContext
+import { CartContext } from '../../CartContextProvider'; // Importa el CartContext
 
 const ProductDetail = ({ route }) => {
   const { product } = route.params;
